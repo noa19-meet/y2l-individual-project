@@ -1,0 +1,192 @@
+.dropbtn {
+    background-color: #3498DB;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    font-family: "Courier New", Courier New, Monospace;
+    
+    
+
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 14px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: "Courier New", Courier New, Monospace;
+    font-size: 15px;
+    top:230px;
+    left:280px;
+
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: "Courier New", Courier New, Monospace;
+    font-size: 18px;
+
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+ 
+ .name{
+    font-family: "Courier New", Courier New, Monospace;
+    font-size: 20px;
+ }
+
+body {
+    height: 100vh;
+    margin:0px;
+
+    background: -webkit-linear-gradient( to  top, DarkOrange , PaleTurquoise);
+    background: -moz-linear-gradient( to  top, DarkOrange , PaleTurquoise);
+    background: -ms-linear-gradient( to  top,   DarkOrange , PaleTurquoise);
+    background: -o-linear-gradient( to  top,   DarkOrange , PaleTurquoise);
+    background: linear-gradient( to  top,  DarkOrange , PaleTurquoise); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+}
+.texta {
+    position: absolute;
+    top: 200px;
+    left: 700px;
+    font-family: "Courier New", Courier New, Monospace;
+    font-size: 20px;
+}
+.cat{
+    position:absolute;
+    top:150px;
+    left:300px;
+    font-family: "Courier New", Courier New, Monospace;
+    font-size: 25px;
+}
+.ul{
+    position:absolute;
+    left:-5px;
+}
+.login {
+    padding: 30px;
+    background: orange;
+    border: 3px solid white;
+    border-radius: 50px;
+    position:absolute;
+    top:150px;
+    left:800px;
+    font-family: "Courier New", Courier New, Monospace;
+    font-size: 20px;
+
+}
+.bar{
+    padding: 25px;
+    color:black;
+    border: 3px solid white;
+    border-radius: 10px;
+    position:absolute;
+    top:150px;
+    left:50px;
+    font-family: "Courier New", Courier New, Monospace;
+    font-size: 18px;
+    width:600px;
+}
+
+.signup{
+    position:absolute;
+    top:150px;
+    left:500px;
+    font-family: "Courier New", Courier New, Monospace;
+    font-size: 20px;
+
+}
+.forgotpass{
+    position:absolute;
+    top:100px;
+    left:500px;
+    font-family: "Courier New", Courier New, Monospace;
+    font-size: 20px;
+
+}
+#image{
+    position: relative;
+}
+div.background {
+  background: url(klematis.jpg) repeat;
+  border: 2px solid black;
+}
+ 
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  margin: 20px
+  
+}
+.hello{
+    position:absolute;
+    font-size:20px;
+    font-family: "Courier New", Courier New, Monospace;
+    top:15px;
+    left:1200px;
+}
+
+.post {  
+    background-repeat: no-repeat;
+    background-size: 300px 300px;
+    width: 300px;
+    height: 300px;
+    font-size: 15px;
+}
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+#submi{
+    color: white;
+    background-color: DarkOrange;
+}
+
+.JobRequests{
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+.Jrequest{
+    background-color: yellow;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-left: 6px;
+    margin-right: 6px;
+    display: inline-block;
+    padding: 8px;
+    border-radius: 10px;
+    height:auto;
+
+}

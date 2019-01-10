@@ -1,0 +1,19 @@
+body {
+    margin: 0;
+    background-color: #99ffd8;
+}
+.texta {
+	position: absolute;
+	top: 100px;
+	left: 700px;
+}
+.login {
+	position:absolute;
+	top:100px;
+	left:500px;
+}
+.signup{
+	position:absolute;
+	top:100px;
+	left:500px;
+}

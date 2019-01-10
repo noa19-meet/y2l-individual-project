@@ -1,0 +1,133 @@
+<DOCTYPE! html>
+<html>
+<head>
+	<title>A Post Request</title>
+	<link rel="stylesheet" type="text/css" href="../static/style_new.css">
+
+ <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap/bootstrap.css') }}">
+ <style>
+ ul {
+  list-style-type: none;
+}
+h1{
+  font-size: 50px;
+  font-family: "Courier New", Courier New, Monospace;
+  position:absolute;
+  top:50px;
+  left:50px;
+}
+</style>
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#"><img src="{{ url_for('static',filename='billblock.png') }}" width=100px height=100px id="image"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="{{url_for('home')}}">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{url_for('Add')}}">Post a request</a>
+        </li>
+        <li class="nav-item", id="demo"></li>
+        <li class="nav-item", id="signup"></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false	">
+            Categories
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{{url_for('give_page')}}">Give</a>
+                <a class="dropdown-item" href="{{url_for('take_page')}}">Take</a>
+                <a class="dropdown-item" href="{{url_for('neighborhood_page')}}">Neighborhood</a>
+          </div>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0" method="post" action="/searchResult">
+        <input  class="form-control mr-sm-2" type="search" placeholder="Search" name="data" aria-label="Search">
+        <button id="submi" class="btn btn-outline-success my-2 my-sm-0" type="submit"  >Search</button>
+      </form>
+    </div>
+  </nav>
+
+
+  <form method="post">
+    <div class="cat">
+     <br>
+     <br>
+     <h3>Category:</h3>
+     <br>
+     
+     <ul>
+       <li><input type="radio" name="cat" value="give">Give</li>
+       <li><input type="radio" name="cat" value="take">Take</li>
+       <li><input type="radio" name="cat" value="neighborhood">Neighborhood</li>
+       
+     </ul>
+     <br>
+     <br>
+     <input type="submit" value="Submit">
+   </div>
+   <div class="texta">
+     <h3>Your Post:</h3>
+     <textarea name="text" rows="20" cols="50">
+     </textarea>
+   </div>
+ </form>
+ 
+
+ <script src="{{ url_for('static', filename='bootstrap/jquery.js') }}"></script>
+ <script src="{{ url_for('static', filename='bootstrap/bootstrap.bundle.js') }}"></script>
+
+
+ <script>
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+    return false;
+  }
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+      // Sign up
+var log = '{{log}}';
+if (log=='false') {
+        var str1 = "Sign Up";
+        var result1 = str1.link("{{url_for('SignUp')}}");
+        document.getElementById("signup").classList.add("nav-link");
+        document.getElementById("signup").innerHTML = result1;
+    }
+
+
+var str;
+var result;
+document.getElementById("demo").classList.add("nav-link");
+if (log=='true') {
+    str = "Log Out";
+    result = str.link("{{url_for('Login')}}");
+    }
+else{
+        str = "Log in";
+        result = str.link("{{url_for('Login')}}");
+    }
+
+console.log(result)
+document.getElementById("demo").innerHTML = result;
+
+</script>
+</body>
+</html>
+
