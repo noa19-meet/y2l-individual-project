@@ -47,6 +47,7 @@ def query_by_username(username1):
     
 def query_by_cat(cat):
     posts = session.query(Post).filter_by(category=cat).all()
+    print(posts)
     return posts
 
 def search(data):

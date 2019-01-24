@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <head>
   <title>My Final Project</title>
   <link rel="stylesheet" type="text/css" href="../static/style_new.css">
@@ -26,6 +26,17 @@
 
 </head>
 <body>
+    <div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#"><img src="{{ url_for('static',filename='billblock.png') }}" width=100px height=100px id="image"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,7 +72,7 @@
       </nav>
     <div class = "JobRequests">
 
-        {% for j in news_posts %}
+        {% for j in nei_posts %}
         <div class = "Jrequest">
             <p>{{ j.description }}</p>
             <label for="post"></label>

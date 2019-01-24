@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
     <head>
         <title>My Final Project</title>
         <link rel="stylesheet" type="text/css" href="../static/style_new.css">
@@ -16,6 +16,18 @@
 
     </head>
     <body>
+
+      <div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
 
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#"><img src="{{ url_for('static',filename='billblock.png') }}" width=100px height=100px id="image"></a>
@@ -166,7 +178,7 @@
     
           <div class="background">
             <div class="transbox">
-              <p align="center">We are a happy & social place where people from the same block can talk and get benefit from each other skills, in a fun and sharing way</p>
+              <p align="center">One man's trash is Another man's treature !</p>
             </div>
           </div>
 
@@ -225,3 +237,4 @@ document.getElementById("demo").innerHTML = result;
 </script>
 </body>
 </html>
+

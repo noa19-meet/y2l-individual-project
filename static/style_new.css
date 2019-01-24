@@ -59,11 +59,11 @@ body {
     height: 100vh;
     margin:0px;
 
-    background: -webkit-linear-gradient( to  top, DarkOrange , PaleTurquoise);
-    background: -moz-linear-gradient( to  top, DarkOrange , PaleTurquoise);
-    background: -ms-linear-gradient( to  top,   DarkOrange , PaleTurquoise);
-    background: -o-linear-gradient( to  top,   DarkOrange , PaleTurquoise);
-    background: linear-gradient( to  top,  DarkOrange , PaleTurquoise); 
+    background: -webkit-linear-gradient( to  top, AliceBlue  ,LightSteelBlue );
+    background: -moz-linear-gradient( to  top, AliceBlue , LightSteelBlue);
+    background: -ms-linear-gradient( to  top,   AliceBlue , LightSteelBlue);
+    background: -o-linear-gradient( to  top,   AliceBlue , LightSteelBlue);
+    background: linear-gradient( to  top,  AliceBlue , LightSteelBlue); 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -92,7 +92,7 @@ body {
 }
 .login {
     padding: 30px;
-    background: orange;
+    background: LightSteelBlue;
     border: 3px solid white;
     border-radius: 50px;
     position:absolute;
@@ -170,7 +170,7 @@ div.transbox p {
 }
 #submi{
     color: white;
-    background-color: DarkOrange;
+    background-color: LightSteelBlue;
 }
 
 .JobRequests{
