@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -31,11 +32,9 @@
                 Categories
               </a>
               <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{{url_for('jobs_page')}}">Jobs</a>
-                <a class="dropdown-item" href="{{url_for('sales_page')}}">Sales</a>
-                <a class="dropdown-item" href="{{url_for('lost_and_found_page')}}">Losts & Founds</a>
-                <a class="dropdown-item" href="{{url_for('news_page')}}">News</a>
-                <a class="dropdown-item" href="{{url_for('others_page')}}">Others</a>
+                <a class="dropdown-item" href="{{url_for('give_page')}}">Give</a>
+                <a class="dropdown-item" href="{{url_for('take_page')}}">Take</a>
+                <a class="dropdown-item" href="{{url_for('neighborhood_page')}}">Neighborhood</a>
               </div>
             </li>
           </ul>
@@ -56,7 +55,7 @@
       </div> -->
     <div class = "JobRequests">
 
-        {% for j in sales_posts %}
+        {% for j in give_posts %}
         <div class = "Jrequest">
             <p>{{ j.description }}</p>
             <label for="post"></label>
@@ -140,3 +139,4 @@ document.getElementById("demo").innerHTML = result;
 </script>
     </body>
     </html>
+  

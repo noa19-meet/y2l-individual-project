@@ -30,16 +30,14 @@
           <li class="nav-item", id="signup">
           </li>
           <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false	">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false   ">
                 Categories
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="{{url_for('jobs_page')}}">Jobs</a>
-                <a class="dropdown-item" href="{{url_for('sales_page')}}">Sales</a>
-                <a class="dropdown-item" href="{{url_for('lost_and_found_page')}}">Losts & Founds</a>
-                <a class="dropdown-item" href="{{url_for('news_page')}}">News</a>
-                <a class="dropdown-item" href="{{url_for('others_page')}}">Others</a>
-            </div>
+             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="{{url_for('give_page')}}">Give</a>
+                <a class="dropdown-item" href="{{url_for('take_page')}}">Take</a>
+                <a class="dropdown-item" href="{{url_for('neighborhood_page')}}">Neighborhood</a>
+              </div>
         </li>
 
     </ul>
@@ -86,11 +84,11 @@ h1{
 
 
 </script>    <body>
-   <form method="post">
+   <form method="post" action="{{url_for('SignUp') }}">
     <br>
     <br>
     <div class="signup">
-    	<input type="text" name="name" placeholder="First name">
+        <input type="text" name="name" placeholder="First name">
         <br>
         <br>
         <input type="text" name="familyName" placeholder="Last name">
@@ -105,11 +103,10 @@ h1{
         <input type="text" name="mail" placeholder="Mail">
         <br>
         <br>
+        <input type="text" name="loc" placeholder="Neighberhood">
         <br>
-        <input type="radio" name="loc" value="Haifa">Haifa
-        <input type="radio" name="loc" value="Nazareth">Nazarath
-        <input type="radio" name="loc" value="Jerusalem">Jerusalem
         <br>
+        
         <br>
         <br>
         <input type="submit" value="submit">
