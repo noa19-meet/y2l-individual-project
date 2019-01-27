@@ -5,7 +5,7 @@
     font-size: 16px;
     border: none;
     cursor: pointer;
-    font-family: "Courier New", Courier New, Monospace;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
     
     
 
@@ -29,7 +29,7 @@
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    font-family: "Courier New", Courier New, Monospace;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 15px;
     top:230px;
     left:280px;
@@ -41,7 +41,7 @@
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    font-family: "Courier New", Courier New, Monospace;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 18px;
 
 }
@@ -51,7 +51,7 @@
 .show {display: block;}
  
  .name{
-    font-family: "Courier New", Courier New, Monospace;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 20px;
  }
 
@@ -59,11 +59,6 @@ body {
     height: 100vh;
     margin:0px;
 
-    background: -webkit-linear-gradient( to  top, AliceBlue  ,LightSteelBlue );
-    background: -moz-linear-gradient( to  top, AliceBlue , LightSteelBlue);
-    background: -ms-linear-gradient( to  top,   AliceBlue , LightSteelBlue);
-    background: -o-linear-gradient( to  top,   AliceBlue , LightSteelBlue);
-    background: linear-gradient( to  top,  AliceBlue , LightSteelBlue); 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -71,19 +66,20 @@ body {
 
     background-repeat:no-repeat;
     background-attachment: fixed;
+    background-image: url("backn.jpg");
 }
 .texta {
     position: absolute;
     top: 200px;
     left: 700px;
-    font-family: "Courier New", Courier New, Monospace;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
     font-size: 20px;
 }
 .cat{
     position:absolute;
     top:150px;
     left:300px;
-    font-family: "Courier New", Courier New, Monospace;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
     font-size: 25px;
 }
 .ul{
@@ -92,13 +88,13 @@ body {
 }
 .login {
     padding: 30px;
-    background: LightSteelBlue;
+    background-color: LightGrey ;
     border: 3px solid white;
     border-radius: 50px;
     position:absolute;
-    top:150px;
-    left:800px;
-    font-family: "Courier New", Courier New, Monospace;
+    top:185px;
+    left:450px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 20px;
 
 }
@@ -110,16 +106,16 @@ body {
     position:absolute;
     top:150px;
     left:50px;
-    font-family: "Courier New", Courier New, Monospace;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
     font-size: 18px;
     width:600px;
 }
 
 .signup{
     position:absolute;
-    top:150px;
+    top:250px;
     left:500px;
-    font-family: "Courier New", Courier New, Monospace;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
     font-size: 20px;
 
 }
@@ -127,7 +123,7 @@ body {
     position:absolute;
     top:100px;
     left:500px;
-    font-family: "Courier New", Courier New, Monospace;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
     font-size: 20px;
 
 }
@@ -151,7 +147,7 @@ div.transbox {
 .hello{
     position:absolute;
     font-size:20px;
-    font-family: "Courier New", Courier New, Monospace;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
     top:15px;
     left:1200px;
 }
@@ -161,12 +157,13 @@ div.transbox {
     background-size: 300px 300px;
     width: 300px;
     height: 300px;
-    font-size: 15px;
+    font-size: 30px;
 }
 div.transbox p {
   margin: 5%;
-  font-weight: bold;
+  font-weight: 900;
   color: #000000;
+  font-family:"Trebuchet MS", Helvetica, sans-serif;
 }
 #submi{
     color: white;
